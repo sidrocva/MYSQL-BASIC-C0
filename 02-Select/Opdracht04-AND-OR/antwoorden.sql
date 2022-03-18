@@ -1,30 +1,30 @@
 -- Opdracht 1 
 SELECT * WHERE nationality="Spain" AND club="Chelsea"
 -- Opdracht 2 
-SELECT * WHERE age=17 and nationality="spain" and wage=15000
+SELECT * FROM players WHERE nationality = "Spain" AND wage = "15000" AND age = "17"
 -- Opdracht 3
-select * where club="Liverpool" AND age>20
+select * where club="Liverpool" AND age>"20"
 -- Opdracht 4
-select * where country="Netherlands" and club="ajax"
+SELECT * FROM players WHERE club = "Ajax" AND nationality = "Netherlands"
 -- Opdracht 5
-select * where club="ajax" and nationality=!"netherlands"
+SELECT * FROM players WHERE club = "Ajax" AND nationality != "Netherlands"
 -- Opdracht 6 
-select name, age where club="AZ alkmaar"
+SELECT name, age FROM players WHERE club = "AZ Alkmaar"
 -- Opdracht 7 
-select name, age where club="AZ alkmaar"
+SELECT name, age, club FROM players WHERE club = "AZ Alkmaar"
 -- Opdracht 8
-select name, wage where nationality="Brazilian" and club="Manchester City"
+SELECT name, wage FROM players WHERE club = "Manchester City" AND nationality = "brazil"
 -- Opdracht 9
-select name where age=30 and wage<10000
+SELECT name FROM players WHERE age = "30" AND wage<"10000"
 -- Opdracht 10
-select name, age where nationality="Porugal" or spain
+SELECT name, age FROM players WHERE nationality = "Spain" OR nationality = "Portugal"
 -- Opdracht 11
-select name, age where nationality="Portugal" and club="Chelsea"
+SELECT name, age, club FROM players WHERE club = "Chelsea" OR nationality = "Portugal"
 -- Opdracht 12
-select name, club where age>40 and wage=10000
+SELECT name, club FROM players WHERE age > "40" OR wage > "10000"
 -- Opdracht 13
-select * where country="Netherlands" and club="Ajax" or club="FC Utrecht"
+SELECT * FROM players WHERE nationality = "Netherlands" AND club = "Ajax" OR club = "FC Utrecht"
 -- Opdracht 14
-select * where country="England" and age>20 and wage>100000
+SELECT * FROM players WHERE nationality = "England" AND wage > "100000" AND age > "20"
 -- Opdracht 15
-select name, age, nationality where nationality="Argentinië" or nationality="Brazilië" and age>25
+SELECT age, name, nationality FROM players WHERE nationality = "Argentina" OR nationality = "Brazil" AND age > "25"
